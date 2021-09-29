@@ -55,13 +55,28 @@
 // romanToInt("IX");
 // romanToInt("VX");
 
+// function roman(number) {
+//   let num = chart(number.charAt(0));
+//   let pre, curr;
+
+//   for (let i = 1; i < number.length; i++) {
+//     curr = chart(number.charAt(i));
+//     pre = chart(number.charAt(i - 1));
+//     if (curr <= pre) {
+//       num += curr;
+//     } else {
+//       num = num - pre * 2 + curr;
+//     }
+//   }
+//   return num;
+// }
 function roman(number) {
-  let num = chart(number.charAt(0));
+  let num = chart(number[0]);
   let pre, curr;
 
   for (let i = 1; i < number.length; i++) {
-    curr = chart(number.charAt(i));
-    pre = chart(number.charAt(i - 1));
+    curr = chart(number[i]);
+    pre = chart(number[i - 1]);
     if (curr <= pre) {
       num += curr;
     } else {
