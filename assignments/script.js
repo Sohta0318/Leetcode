@@ -107,6 +107,7 @@ console.log(roman("XXVI"));
 console.log(roman("IX"));
 console.log(roman("IL"));
 console.log(roman("IC"));
-console.log(roman("IIC"));
+console.log(roman("II"));
+console.log(roman("LXV"));
 
-console.log(1 - 1 * 2 + 10); // IX
+// console.log(1 - 1 * 2 + 10); // IX
